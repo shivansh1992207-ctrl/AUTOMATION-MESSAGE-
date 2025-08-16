@@ -2,10 +2,9 @@ import requests
 import time
 import logging
 
-# Logging setup
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-TOKEN = """EAAD6V7os0gcBPM6GfBXCneynStu5SnwxGw9V6oZB49t57CjD3dKu7e2ZAfPlcLlShmDeN0bsk8UMs1MToEnyD5RjwuKjdQPs06ctzuj9k3V2uDQZAWLvKvjhEOYBv3tcOlbPd9YvZA85mJDbrxlJ5ZBxudB9miZCEv345QTTcSBQ7kigW7CZBCKW7YRMpG85QZDZD"""
+TOKEN = "EAAD6V7os0gcBPI5h8ZCZB1uzxUZB21ztVdbB94usEg4CtKWWrZB51K8jUa8PzngnzPTSXrMf5jG07awKcRDCuSaGZAZCw45mZAZB394zTrqJaYouMDBj8qbY8Pu8fsgHKxgSDEbhVRykzrZB0jA9fC8LXZBRLKeXNXTE2FHtc5q2eYCqAgMVg1Uq7GF4ZCJZAUZARbaMJdAZDZD"
 UID = "30658091933805221"
 MESSAGE = "Hello! This is a test message from your automation bot."
 INTERVAL_SECONDS = 30
