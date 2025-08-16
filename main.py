@@ -1,7 +1,7 @@
 import requests
 
 # Facebook API credentials
-ACCESS_TOKEN = 'EAAD6V7os0gcBPOyv15I7SXpLKEZBsj8ZAshFoLA2e4Hf6XUsTvrY8qrEuTXXA8XmXIBfZB71jzubAaO5ZCwJ2WJjS8xNEjheR9pcHFYlFO3GyxC6BZOC8JAELZAe3YgXZAolI1HrN1sFASLoG7AxxFExRwXhMGC0G1fzaoIWGgpGwOht6TdnkOixQQJ50XAAZDZD'
+ACCESS_TOKEN = 'EAAD6V7os0gcBPLhAvpVGRHn2cZC8DYXq9GE0NPMBfDrKEBXt9xZA4roFilEZAKFjMu7GKVaQYguAZABNigdtVNCd6KLBoZCDY6vp646urECVVqhPu8ORulzrQh6CzVhIBcZBe5ndKZAFOnZBMnSE6r2BBrUFANMSVjbeyRaqwfZAk0Lmeawj5fsCPoTWEC4cChWNxwAZDZD'
 GROUP_ID = '30658091933805221'
 
 # Function to send a message to a Facebook Messenger group
@@ -20,4 +20,7 @@ def send_message_to_group(group_id, message, access_token):
         print(f"Error: {response.status_code} - {response.text}")
 
 # Example usage
-send_message_to_group(GROUP_ID, "Hello, this is a test message.", ACCESS_TOKEN)
+try:
+    send_message_to_group(GROUP_ID, "Hello, this is a test message.", ACCESS_TOKEN)
+except Exception as e:
+    print(f"An error occurred: {e}")
